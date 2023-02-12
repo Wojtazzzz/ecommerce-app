@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import '../styles/tailwind.css';
 
 type RootLayoutProps = {
 	children: ReactNode;
