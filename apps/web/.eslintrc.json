@@ -3,7 +3,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
-    "project": "tsconfig.json"
+    "project": "./apps/web/tsconfig.json"
   },
   "settings": {
     // "next": {
@@ -13,7 +13,10 @@
       "version": "detect"
     }
   },
-  "ignorePatterns": ["next.config.js", "tailwind.config.js"],
+  "ignorePatterns": [
+    "next.config.js",
+    "tailwind.config.js"
+  ],
   "extends": [
     "next",
     "plugin:@typeofweb/recommended",
@@ -23,16 +26,28 @@
     "plugin:import/typescript",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
-    "react-hooks/exhaustive-deps": ["error"],
+    "react-hooks/exhaustive-deps": [
+      "error"
+    ],
     "react/display-name": "error",
-    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      "never"
+    ],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-redundant-roles": "off",
     "@next/next/no-head-element": "off",
-    "@typescript-eslint/consistent-type-imports": ["error", { "disallowTypeAnnotations": false }],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "disallowTypeAnnotations": false
+      }
+    ],
     "@typescript-eslint/require-await": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-unused-vars": "off",
